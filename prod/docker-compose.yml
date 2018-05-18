@@ -1,16 +1,6 @@
 version: "3"
 services:
 
-  mongo:
-    image: mongo
-    ports:
-        - "2811:27017"
-
-  seed:
-    image: karpikpl/really-cloudy_seed:latest
-    links:
-      - mongo
-
   web:
     image: karpikpl/really-cloudy_web:latest
     ports:
@@ -18,3 +8,13 @@ services:
     links:
       - mongo
       - seed
+
+  mongo:
+    image: mongo
+    ports:
+      - "2811:27017"
+
+  seed:
+    image: karpikpl/really-cloudy_seed:latest
+    links:
+      - mongo

@@ -39,7 +39,7 @@ exports.register = function (server, options, next) {
     // Serve up all static content in build folder
     server.route({
         method: 'GET',
-        path: '/odsapi/{env}/log/{path*}',
+        path: '/cloudy-api/{env}/log/{path*}',
         handler: {
             directory: {
                 path: Path.join(__dirname, '../../client/build/'),
