@@ -36,12 +36,20 @@ function addBlocks(location) {
 
   for(let i=0; i<numBlockSize; i++) {
 	  for(let j=0; j<numBlockSize; j++) {
-		  var polygon = new Microsoft.Maps.Polygon([
-      		new Microsoft.Maps.Location(lat, long),
-      		new Microsoft.Maps.Location(lat + width, long),
-      		new Microsoft.Maps.Location(lat + width, long + height),
-			    new Microsoft.Maps.Location(lat, long + height)
-  		]);
+      var num = Math.random();
+      var color;
+      if(num < 0.2) {
+        color = new Microsoft.Maps.Color(0.4, 255, 0, 0);
+      }
+      else {
+        color = new Microsoft.Maps.Color(0.4, 0, 255, 0);
+      }
+      var polygon = new Microsoft.Maps.Polygon([
+          new Microsoft.Maps.Location(lat, long),
+          new Microsoft.Maps.Location(lat + width, long),
+          new Microsoft.Maps.Location(lat + width, long + height),
+          new Microsoft.Maps.Location(lat, long + height)
+      ], { fillColor: color });
 			map.entities.push(polygon);
 			lat += width;
 	  }
