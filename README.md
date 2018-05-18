@@ -6,3 +6,18 @@ Easiest way to start the app is by using containers:
 
 ## api
 `cloudy-api/test/web`
+
+## Docker tag
+`docker tag really-cloudy_web karpikpl/really-cloudy_web`
+`docker tag really-cloudy_nginx karpikpl/really-cloudy_nginx`
+`docker tag really-cloudy_seed karpikpl/really-cloudy_seed`
+
+## Docker push
+first `docker login`
+
+then
+```
+docker push karpikpl/really-cloudy_nginx
+docker push karpikpl/really-cloudy_seed
+docker push karpikpl/really-cloudy_web
+```
