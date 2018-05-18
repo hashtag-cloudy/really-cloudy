@@ -1,0 +1,17 @@
+{
+  "name": "data-importer",
+  "version": "1.0.0",
+  "description": "Imports data to mongo",
+  "main": "dataImporter.js",
+  "scripts": {
+    "start": "node dataImporter.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Piotr Karpala",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "jsonfile": "^3.0.0",
+    "mongodb": "^2.2.29"
+  }
+}

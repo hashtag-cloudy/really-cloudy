@@ -1,0 +1,53 @@
+.console {
+  font-family:Courier;
+  color: #CCCCCC;
+  background: #000000;
+  border: 3px double #CCCCCC;
+  padding: 10px;
+  list-style: none;
+}
+
+.console .ERROR {
+  color: red;
+}
+
+.console .WARNING {
+  color: pink;
+}
+
+.console .EXTRA {
+  color: green;
+}
+
+.console .BEAT {
+  color: lightblue;
+}
+
+.console .requestId {
+  color: gray;
+  font-style: italic;
+}
+
+.ReactJsonSyntaxHighlighter pre {
+  font-size: 9pt;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+.ReactJsonSyntaxHighlighter .string {
+  color: #98C379;
+}
+.ReactJsonSyntaxHighlighter .number {
+  color: #D19A66;
+}
+.ReactJsonSyntaxHighlighter .boolean {
+  color: #56B6C2;
+}
+.ReactJsonSyntaxHighlighter .null {
+  color: #56B6C2;
+}
+.ReactJsonSyntaxHighlighter .key {
+  color: #E06C75;
+}

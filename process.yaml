@@ -1,0 +1,7 @@
+apps:
+  - script: server.js
+    name: cloudy-api
+    instances: 1
+    exec_mode: fork
+    env:
+      NODE_ENV: production

@@ -1,0 +1,14 @@
+{
+    "localhost": {
+        "url": {
+            "$filter": "env",
+            "$default": "mongodb://localhost:27017/cloudy",
+            "test": "mongodb://localhost:27017/cloudy",
+            "docker": "mongodb://mongo/cloudy"
+        },
+        "settings": {
+            "poolSize": 10
+        },
+        "decorate": true
+    }
+}

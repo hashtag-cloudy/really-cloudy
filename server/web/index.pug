@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title World Blockchain Development Fund
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet', crossorigin='anonymous')
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', rel='stylesheet', crossorigin='anonymous')
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', rel='stylesheet', crossorigin='anonymous')
+
+  body
+    div(class="container-fluid")
+      div(class="row")
+        div(class="col-md-8")
+          h1 Welcome - let's make world a better place
+
+      div(class="row")
+        div(class="col-md-8")
+          h2 Village list
+            span(class="badge") !{villages.length}
+
+      div(class="row")
+        div(class="col-md-12")
+          table(class='table table-striped table-hoover')
+            thead
+              tr
+                th= 'Name'
+                th= 'Location'
+            tbody
+            for village in villages
+              tr
+                td= village.name
+                td= village.location

@@ -1,0 +1,7 @@
+node_modules/*
+mongoData/**
+migration/node_modules/*
+!mongoData/dataImporter.js
+!mongoData/mockData.js
+test/artifacts/*
+client/**

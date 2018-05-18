@@ -1,0 +1,26 @@
+version: "3"
+services:
+  nginx:
+    build: ./nginx
+    links:
+        - web:web
+    ports:
+        - "80:80"
+
+  mongo:
+    image: mongo
+    ports:
+        - "2811:27017"
+
+  seed:
+    build: ./mongodata
+    links:
+      - mongo
+
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+      - seed

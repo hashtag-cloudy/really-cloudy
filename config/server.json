@@ -1,0 +1,16 @@
+{
+    "$meta": "This file configures the Cloudy API.",
+    "projectName": "cloudy-api",
+    "port": {
+        "web": {
+            "$filter": "env",
+            "test": 9090,
+            "$default": 8080,
+            "docker": 3000,
+            "production": 8087
+        }
+    },
+    "logger": {
+        "showBeats": false
+    }
+}
