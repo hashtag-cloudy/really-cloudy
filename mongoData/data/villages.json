@@ -2,7 +2,12 @@
     "name": "Isiolo",
     "location": "Kenya",
     "coordinates": "0.735124, 39.173418",
-    "mapUrl": "https://www.bing.com/maps/embed?h=400&w=500&cp=0.735124~39.173418&lvl=18&typ=d&sty=h&src=SHELL&FORM=MBEDV8"
+    "mapUrl": "https://www.bing.com/maps/embed?h=400&w=500&cp=0.735124~39.173418&lvl=18&typ=d&sty=h&src=SHELL&FORM=MBEDV8",
+    "inhabitants": {
+        "firstName" : "Mugo",
+        "lastName" : "Do",
+        "nanoAddress" : "xrb_3g1sb8c7er9fx57jqh5wjm1uxjsy7kfeswxwnq3np6zogdowdygc6gxc8e3f"
+    }
 },
 {
     "name": "Borkou",

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>World Blockchain Development Fund</title>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css&quot; integrity=&quot;sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" rel="stylesheet" crossorigin="anonymous">
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" rel="stylesheet" crossorigin="anonymous">
+      <script>function changeMap(coordinates) {
+         var frame = document.getElementById("map");
+         frame.src = coordinates;
+         }
+      </script>
+   </head>
+   <body>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-8">
+               <h2>Villager list<span class="badge">3</span></h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-4">
+               <table class="table table-striped table-hoover">
+                  <thead>
+                     <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Nano Address</th>
+                     </tr>
+                  </thead>
+                  <tbody></tbody>
+                  <tr style="cursor: pointer;">
+                     <td>Mugo</td>
+                     <td>Do</td>
+                     <td><a href="./qr.png">xrb_3g1sb8c7er9fx57jqh5wjm1uxjsy7kfeswxwnq3np6zogdowdygc6gxc8e3f</td>
+                  </tr>
+               </table>
+            </div>
+            <div class="col-md-4"><iframe id="map" width="500" height="400" frameborder="0" scrolling="no" src=""></iframe></div>
+            <div class="col-md-4" id="village"><iframe id="map" width="500" height="400" frameborder="0" scrolling="no" src=""></iframe></div>
+         </div>
+      </div>
+   </body>
+</html>
