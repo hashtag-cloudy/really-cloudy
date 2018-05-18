@@ -13,7 +13,7 @@ services:
         - "2811:27017"
 
   seed:
-    build: ./mongodata
+    build: ./mongoData
     links:
       - mongo
 
