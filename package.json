@@ -39,6 +39,7 @@
     "mongodb": "^2.2.30",
     "node-fetch": "^1.7.2",
     "pug": "^2.0.0-rc.2",
+    "request-promise-native": "^1.0.5",
     "socket.io": "^2.0.3",
     "vision": "^4.1.1",
     "visionary": "^6.0.2"
