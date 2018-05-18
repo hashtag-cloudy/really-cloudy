@@ -1,12 +1,18 @@
 [{
-    "name": "Village 1",
-    "location": "Africa"
+    "name": "Isiolo",
+    "location": "Kenya",
+    "coordinates": "0.735124, 39.173418",
+    "mapUrl": "https://www.bing.com/maps/embed?h=400&w=500&cp=0.735124~39.173418&lvl=18&typ=d&sty=h&src=SHELL&FORM=MBEDV8"
 },
 {
-    "name": "Village 2",
-    "location": "Africa"
+    "name": "Borkou",
+    "location": "Chad",
+    "coordiantes": "16.071337, 18.490813",
+    "mapUrl": "https://www.bing.com/maps/embed?h=400&w=500&cp=16.071337~18.490813&lvl=18&typ=d&sty=h&src=SHELL&FORM=MBEDV8"
 },
 {
-    "name": "Village 3",
-    "location": "Africa"
+    "name": "Deba",
+    "location": "Ghana",
+    "coordinates": "8.815019844991042, -0.5730511489986534",
+    "mapUrl": "https://www.bing.com/maps/embed?h=400&w=500&cp=8.815019844991042~-0.5730511489986534&lvl=18&typ=d&sty=h&src=SHELL&FORM=MBEDV8"
 }]
