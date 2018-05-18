@@ -6,6 +6,9 @@ html
     link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet', crossorigin='anonymous')
     link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', rel='stylesheet', crossorigin='anonymous')
     link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', rel='stylesheet', crossorigin='anonymous')
+    script(type='text/javascript', src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap', async, defer)
+    script(type='text/javascript')
+      include bing-map.js
 
     script.
       function changeMap(coordinates) {
@@ -17,7 +20,11 @@ html
     div(class="container-fluid")
       div(class="row")
         div(class="col-md-8")
-          h1 Welcome - let's make world a better place
+          h1 Welcome - let's make the world a better place
+
+      div(class="row")
+        div(class="col-md-12")
+          div(id="myMap" style="position:relative;width:100vw;height:70vh")
 
       div(class="row")
         div(class="col-md-8")
