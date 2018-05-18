@@ -17,7 +17,9 @@ const manifest = {
         },
         connections: {
             routes: {
-                security: true
+                security: {
+                    xframe: 'sameorigin'
+                }
             }
         }
     },
